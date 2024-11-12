@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV - ALUGUEL CO ERROS" position="(151.0, 150.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(311.0, 48.0)" />
+		<node id="2" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(281.0, 158.0)" />
+		<node id="3" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(524.0, 159.0)" />
+		<node id="4" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="Impute" position="(405.0, 159.0)" />
+		<node id="5" name="Discretize" qualified_name="Orange.widgets.data.owdiscretize.OWDiscretize" project_name="Orange3" version="" title="Discretize" position="(641.0, 150.0)" />
+		<node id="6" name="Bar Plot" qualified_name="Orange.widgets.visualize.owbarplot.OWBarPlot" project_name="Orange3" version="" title="Bar Plot" position="(750.0, 150.0)" />
+		<node id="7" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(773.0, 263.0)" />
+		<node id="8" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV - ALUGUEL LIMPO" position="(120.0, 325.0)" />
+		<node id="9" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (2)" position="(644.0, 263.0)" />
+		<node id="10" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="NORMALIZADO [-1,1]" position="(262.0, 326.0)" />
+		<node id="11" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(413.0, 326.0)" />
+		<node id="12" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data (1)" position="(539.0, 326.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="4" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="3" source_node_id="4" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="3" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="3" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="9" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="annotated_data" sink_channel_id="data" />
+		<link id="8" source_node_id="8" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="10" sink_node_id="11" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="10" source_node_id="11" sink_node_id="12" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/amandaaraujo/Documents/IPOG - CIÊNCIAS DE DADOS/ESTATISTICAS DE DADOS - 12.07.24/Atividade 03. aluguel-com-erros.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/amandaaraujo/Documents/IPOG - CIÊNCIAS DE DADOS/ESTATISTICAS DE DADOS - 12.07.24', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfdr\x00\x00\x008\xff\xff\xfe\xb9\x00\x00\x01\xaf\x00\x00\x02"\x00\x00\x01\x14\x00\x00\x03i\x00\x00\x02o\x00\x00\x00\x01\x02\x00\x00\x00\x03\xc0\xff\xff\xfdr\x00\x00\x00T\xff\xff\xfe\xb9\x00\x00\x01\xaf', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfcb\x00\x00\x00&gt;\xff\xff\xffw\x00\x00\x02\x03\xff\xff\xfc\x86\x00\x00\x00\x1c\x00\x00\x02#\x00\x00\x03h\x00\x00\x00\x01\x02\x00\x00\x00\x03\xc0\xff\xff\xfcb\x00\x00\x00Z\xff\xff\xffw\x00\x00\x02\x03', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [7], 'columns': [0, 1, 2, 3, 4, 5, 6, 7, 8]}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASV4wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAA///8QAAAAAD/////AAACG////EAAAAAA/////wAAAhsAAAABAAQAAAPA///8QAAAAAD/
+////AAACG5SMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQoKIwIZW5kZXJlY2+USwNLDil0lCiMBGRhdGGUSwNLAYwKamFu
+ZWlybyAxN5SFlHSUZWgISwJ1jAphdHRyaWJ1dGVzlH2UKIwGY29kaWdvlEsCjAdxdWFydG9zlEsB
+jAVzdWl0ZZRLAowEYXJlYZRLAowEdmFnYZRLAYwHYWx1Z3VlbJRLAowKY29uZG9taW5pb5RLAnWM
+BW1ldGFzlH2UKIwIZW5kZXJlY2+USwOMBGRhdGGUSwN1dWJhdS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVuAEAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UKIwLQ2F0ZWdvcmljYWyUjAR2
+YWdhlIwBMJSMATGUhpQph5SGlF2UjAtDYXRlZ29yaWNhbJSMB3F1YXJ0b3OUjAExlIwBMpSGlCmH
+lIaUXZSMDEFzQ29udGludW91c5QphpRhjARSZWFslIwFc3VpdGWUSwOMAWaUhpQph5SGlF2UjA1B
+c0NhdGVnb3JpY2FslCmGlGGMBlN0cmluZ5SMBGRhdGGUKYaUhpRdlCiMBkFzVGltZZQphpSMCFN0
+cnBUaW1llCiMFERldGVjdCBhdXRvbWF0aWNhbGx5lE5LAUsBdJSGlGV1jBZfbWVyZ2VfZGlhbG9n
+X3NldHRpbmdzlH2UjBJjb250cm9sQXJlYVZpc2libGWUiIwRb3V0cHV0X3RhYmxlX25hbWWUjACU
+jBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD///xAAAAAAP////8AAAIb///8QQAAAB3/
+///+AAACGgAAAAEABAAAA8D///xAAAAAAP////8AAAIblIwLX192ZXJzaW9uX1+USwR1Lg==
+</properties>
+		<properties node_id="4" format="pickle">gASVsgIAAAAAAAB9lCiMFV9kZWZhdWx0X21ldGhvZF9pbmRleJRLAYwKYXV0b2NvbW1pdJSIjBJj
+b250cm9sQXJlYVZpc2libGWUiIwVZGVmYXVsdF9udW1lcmljX3ZhbHVllEcAAAAAAAAAAIwMZGVm
+YXVsdF90aW1llEsAjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD///zZAAAAAP///1MA
+AAIH///82QAAABz///9TAAACBwAAAAECAAAAA8D///zZAAAAHP///1MAAAIHlIwLX192ZXJzaW9u
+X1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRl
+eHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMGl92YXJpYWJsZV9pbXB1dGF0aW9uX3N0YXRllH2UKIwn
+T3JhbmdlLmRhdGEudmFyaWFibGUuQ29udGludW91c1ZhcmlhYmxllIwFc3VpdGWUhpRLB0cAAAAA
+AAAAAIWUhpSMJ09yYW5nZS5kYXRhLnZhcmlhYmxlLkNvbnRpbnVvdXNWYXJpYWJsZZSMBGFyZWGU
+hpRLAimGlIwnT3JhbmdlLmRhdGEudmFyaWFibGUuQ29udGludW91c1ZhcmlhYmxllIwHYWx1Z3Vl
+bJSGlEsCKYaUjCdPcmFuZ2UuZGF0YS52YXJpYWJsZS5Db250aW51b3VzVmFyaWFibGWUjApjb25k
+b21pbmlvlIaUSwIphpR1Sv7///+GlGgISwF1jAphdHRyaWJ1dGVzlH2UKIwGY29kaWdvlEsCjAdx
+dWFydG9zlEsBaBVLAmgaSwKMBHZhZ2GUSwFoHksCaCJLAnWMBW1ldGFzlH2UKIwIZW5kZXJlY2+U
+SwOMBGRhdGGUSwN1dWJhdS4=
+</properties>
+		<properties node_id="5" format="pickle">gASVEwEAAAAAAAB9lCiMCGF1dG9zZW5klIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdp
+ZGdldEdlb21ldHJ5lENCAdnQywADAAD///xAAAAAAP////8AAAIb///8QAAAAAD/////AAACGwAA
+AAEABAAAA8D///xAAAAAAP////8AAAIblIwJdmFyX2hpbnRzlH2UKE6MIE9yYW5nZS53aWRnZXRz
+LmRhdGEub3dkaXNjcmV0aXpllIwHVmFySGludJSTlGgHjAdNZXRob2RzlJOUSwGFlFKUKYaUgZSM
+BGFyZWGUiYaUaAloC0sGhZRSlIwLMzAsNTAsODAsOTCUhZSGlIGUdYwLX192ZXJzaW9uX1+USwN1
+Lg==
+</properties>
+		<properties node_id="6" format="pickle">gASV5AEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD///xAAAAAAP////8AAAIb///8QAAAAAD/////AAAC
+GwAAAAEABAAAA8D///xAAAAAAP////8AAAIblIwJc2VsZWN0aW9ulF2UjA92aXN1YWxfc2V0dGlu
+Z3OUfZSMBWdyYXBolH2UjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jh
+bmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJYW5ub3Rf
+dmFylIwIZW5kZXJlY2+US2eGlIwJY29sb3JfdmFylIwEYXJlYZRLZYaUjAlncm91cF92YXKUaBlL
+ZYaUjAxzZWxlY3RlZF92YXKUjAdhbHVndWVslEtmhpRoCX2UaAtLAXWMCmF0dHJpYnV0ZXOUfZQo
+jAZjb2RpZ2+USwKMB3F1YXJ0b3OUSwKMBXN1aXRllEsBaBlLAYwEdmFnYZRLAWgeSwKMCmNvbmRv
+bWluaW+USwJ1jAVtZXRhc5R9lChoFksDjARkYXRhlEsEdXViYXUu
+</properties>
+		<properties node_id="7" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfd\x98\x00\x00\x00\xa3\xff\xff\xff&amp;\x00\x00\x01E\xff\xff\xfd\x98\x00\x00\x00\xbf\xff\xff\xff&amp;\x00\x00\x01E\x00\x00\x00\x01\x00\x00\x00\x00\x03\xc0\xff\xff\xfd\x98\x00\x00\x00\xbf\xff\xff\xff&amp;\x00\x00\x01E', 'stored_name': 'Atividade 03. aluguel - limpo.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="8" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/amandaaraujo/Documents/IPOG - CIÊNCIAS DE DADOS/ESTATISTICAS DE DADOS - 12.07.24/Atividade 03. aluguel - limpo.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Skip'}, {'start': 1, 'stop': 10, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/amandaaraujo/Documents/IPOG - CIÊNCIAS DE DADOS/ESTATISTICAS DE DADOS - 12.07.24', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfdr\x00\x00\x008\xff\xff\xfe\xb9\x00\x00\x01\xaf\x00\x00\x02"\x00\x00\x01\x14\x00\x00\x03i\x00\x00\x02o\x00\x00\x00\x01\x02\x00\x00\x00\x03\xc0\xff\xff\xfdr\x00\x00\x00T\xff\xff\xfe\xb9\x00\x00\x01\xaf', '__version__': 3}</properties>
+		<properties node_id="9" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b\xff\xff\xfcA\x00\x00\x00\x1d\xff\xff\xff\xfe\x00\x00\x02\x1a\x00\x00\x00\x01\x02\x00\x00\x00\x03\xc0\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="10" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b\xff\xff\xfc\xb4\x00\x00\x00i\xff\xff\xffx\x00\x00\x01\xb8\x00\x00\x00\x01\x00\x04\x00\x00\x03\xc0\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b', 'storedsettings': {'name': '', 'preprocessors': [('orange.preprocess.scale', {'method': 4})]}, '__version__': 2}</properties>
+		<properties node_id="11" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b\xff\xff\xfcA\x00\x00\x00\x1d\xff\xff\xff\xfe\x00\x00\x02\x1a\x00\x00\x00\x01\x00\x04\x00\x00\x03\xc0\xff\xff\xfc@\x00\x00\x00\x00\xff\xff\xff\xff\x00\x00\x02\x1b', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="12" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfd\x98\x00\x00\x00\xa3\xff\xff\xffO\x00\x00\x01E\xff\xff\xfd\x98\x00\x00\x00\xbf\xff\xff\xffO\x00\x00\x01E\x00\x00\x00\x01\x00\x00\x00\x00\x03\xc0\xff\xff\xfd\x98\x00\x00\x00\xbf\xff\xff\xffO\x00\x00\x01E', 'stored_name': 'Atividade 03. aluguel - normalizado.csv', 'stored_path': '.', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
