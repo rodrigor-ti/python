@@ -1,0 +1,43 @@
+
+
+employees - Dicionário de dados
+Versão para impressão
+·  employee_id – Identificador único do funcionário.
+
+·  department – Departamento principal em que o funcionário trabalha (ex: HR, Software).
+
+·  sub-department – Subdivisão do departamento (ex: Training, Technical Support).
+
+·  first_level_manager – ID do gerente direto.
+
+·  second_level_manager – ID do gerente do gerente.
+
+·  third_level_manager – ID do gerente do segundo nível.
+
+·  fourth_level_manager – ID do gerente do terceiro nível (nível hierárquico mais alto presente).
+
+·  job_level – Nível do cargo (ex: Individual Contributor, Team Lead).
+
+·  gender – Gênero do funcionário.
+
+·  sexual_orientation – Orientação sexual do funcionário.
+
+·  location_city – Cidade onde o funcionário trabalha.
+
+·  marital_status – Estado civil do funcionário (ex: Single, Married).
+
+·  employment_status – Tipo de vínculo (ex: Full Time).
+
+·  salary – Salário do funcionário.
+
+·  hire_date – Data de contratação.
+
+·  term_date – Data de saída da empresa (em branco se ainda estiver ativo).
+
+·  tenure – Tempo de casa em meses.
+
+·  term_type – Tipo de saída (ex: voluntária, involuntária — pode estar ausente).
+
+·  term_reason – Motivo da saída (ex: performance, corte — pode estar ausente).
+
+·  active_status – Status ativo (1 para ativo, 0 para inativo).
